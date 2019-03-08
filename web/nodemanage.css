@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+#main {
+  
+}
+
+#popup {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  
+  display: none;
+}
+
+.item.item_outer {
+  clear: both;
+  
+  height: 48px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid black;
+}
+.item.infobox_left {
+  float: left;
+  
+  height: 48px;
+  /*line-height: 48px;*/
+}
+.item.infobox_right {
+  float: right;
+  
+  height: 48px;
+  /*line-height: 48px;*/
+}
+.item.ib_largeText {
+  padding-top: 4px;
+  
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+}
+.item.ib_smallText {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #999;
+  
+  padding-bottom: 4px;
+}
+.item.ib_listText {
+  
+}
+.item.ib_button {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  
+  opacity: 0.5;
+}

@@ -1,0 +1,299 @@
+{
+  "math:add": {
+    "category": "Math",
+    "title": "Add",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:subtract": {
+    "category": "Math",
+    "title": "Subtract",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:multiply": {
+    "category": "Math",
+    "title": "Multiply",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:divide": {
+    "category": "Math",
+    "title": "Divide",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:bitwise": {
+    "category": "Math",
+    "title": "Bitwise",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Mode", "type": "string"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Result", "type": "number"}
+    ]
+  },
+  "math:modulo": {
+    "category": "Math",
+    "title": "Modulo",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:round_floor": {
+    "category": "Math",
+    "title": "Floor",
+    "in": [
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:round_ceil": {
+    "category": "Math",
+    "title": "Ceil",
+    "in": [
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:round": {
+    "category": "Math",
+    "title": "Round",
+    "in": [
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "math:pow": {
+    "category": "Math",
+    "title": "Exponent",
+    "in": [
+      {"name": "Base", "type": "number"},
+      {"name": "Exponent", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  
+  
+  
+  "input:number": {
+    "category": "Input",
+    "title": "Number",
+    "in": [
+      {"name": "Number", "type": "number"}
+    ],
+    "out": [
+      {"name": "Value", "type": "number"}
+    ]
+  },
+  "input:string": {
+    "category": "Input",
+    "title": "String",
+    "in": [
+      {"name": "String", "type": "string"}
+    ],
+    "out": [
+      {"name": "Value", "type": "string"}
+    ]
+  },
+  "input:bool": {
+    "category": "Input",
+    "title": "Boolean",
+    "in": [
+      {"name": "Boolean", "type": "bool"}
+    ],
+    "out": [
+      {"name": "Value", "type": "bool"}
+    ]
+  },
+  
+  
+  
+  "logic:compare": {
+    "category": "Logic",
+    "title": "Compare",
+    "in": [
+      {"name": "Value", "type": "number"},
+      {"name": "Mode", "type": "string"},
+      {"name": "Value", "type": "number"}
+    ],
+    "out": [
+      {"name": "Result", "type": "bool"}
+    ]
+  },
+  "logic:bool_logic": {
+    "category": "Logic",
+    "title": "Boolean Logic",
+    "in": [
+      {"name": "Value", "type": "bool"},
+      {"name": "Mode", "type": "string"},
+      {"name": "Value", "type": "bool"}
+    ],
+    "out": [
+      {"name": "Result", "type": "bool"}
+    ]
+  },
+  "logic:sel": {
+    "category": "Logic",
+    "title": "Input Selector",
+    "in": [
+      {"name": "Input", "type": "any"},
+      {"name": "Input", "type": "any"},
+      {"name": "Which", "type": "number"}
+    ],
+    "out": [
+      {"name": "Output", "type": "any"}
+    ]
+  },
+  
+  
+  
+  "io:state": {
+    "category": "I/O",
+    "title": "State",
+    "in": [
+      {"name": "Node", "type": "string"}
+    ],
+    "out": [
+      {"name": "Value", "type": "string"}
+    ]
+  },
+  "io:setstate": {
+    "category": "I/O",
+    "title": "Set State",
+    "in": [
+      {"name": "Node", "type": "string"},
+      {"name": "Value", "type": "string"},
+      {"name": "Enable", "type": "bool", "default": 1}
+    ],
+    "out": []
+  },
+  "io:message": {
+    "category": "I/O",
+    "title": "Send Message",
+    "in": [
+      {"name": "Destination", "type": "string"},
+      {"name": "Name", "type": "string"},
+      {"name": "Value", "type": "string"},
+      {"name": "Enable", "type": "bool", "default": 1}
+    ],
+    "out": []
+  },
+  "io:message_data": {
+    "category": "I/O",
+    "title": "Message Data",
+    "in": [],
+    "out": [
+      {"name": "Value", "type": "string"}
+    ]
+  },
+  
+  
+  
+  "vars:get": {
+    "category": "Variables",
+    "title": "Get Variable",
+    "in": [
+      {"name": "Name", "type": "string"}
+    ],
+    "out": [
+      {"name": "Value", "type": "any"}
+    ]
+  },
+  "vars:set": {
+    "category": "Variables",
+    "title": "Set Variable",
+    "in": [
+      {"name": "Name", "type": "string"},
+      {"name": "Value", "type": "any"},
+      {"name": "Enable", "type": "bool", "default": 1}
+    ],
+    "out": []
+  },
+  
+  
+  
+  "env:time": {
+    "category": "Environment",
+    "title": "Current Time",
+    "in": [],
+    "out": [
+      {"name": "Timestamp", "type": "number"}
+    ]
+  },
+  
+  
+  
+  "conv:RGBtoColor": {
+    "category": "Converters",
+    "title": "Combine RGB",
+    "in": [
+      {"name": "R", "type": "number"},
+      {"name": "G", "type": "number"},
+      {"name": "B", "type": "number"}
+    ],
+    "out": [
+      {"name": "Color", "type": "number"}
+    ]
+  },
+  "conv:ColortoRGB": {
+    "category": "Converters",
+    "title": "Split RGB",
+    "in": [
+      {"name": "Color", "type": "number"}
+    ],
+    "out": [
+      {"name": "R", "type": "number"},
+      {"name": "G", "type": "number"},
+      {"name": "B", "type": "number"}
+    ]
+  },
+  
+  
+  
+  "string:sel_list": {
+    "category": "String",
+    "title": "Select from List",
+    "in": [
+      {"name": "Input", "type": "string"},
+      {"name": "Which", "type": "number"}
+    ],
+    "out": [
+      {"name": "Output", "type": "string"}
+    ]
+  }
+}

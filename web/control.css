@@ -1,0 +1,89 @@
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+#main {
+  
+}
+
+.control.control_item_outer {
+  clear: both;
+  
+  height: 48px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid black;
+}
+.control.control_item_name {
+  float: left;
+  
+  font-size: 20px;
+  font-family: sans-serif;
+  
+  height: 48px;
+  line-height: 48px;
+}
+.control.control_c_outer {
+  float: right;
+  
+  height: 48px;
+  line-height: 48px;
+}
+.control.control_c_textbox {
+  width: 100px;
+}
+.control.control_c_textboxbutton {
+  
+}
+
+.control.control_c_toggle {
+  height: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 6px;
+}
+.toggle_outer {
+  position: relative;
+  width: 36px;
+  height: 12px;
+  border-radius: 12px;
+  
+  background-color: #bbbbbb;
+}
+.toggle_inner {
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  
+  background-color: #888888;
+  
+  transition: 0.25s;
+}
+.toggle_inner_on {
+  transform: translateX(24px);
+  transition: 0.25s;
+  background-color: #8888ff;
+}
+.toggle_inner_off {
+  
+}
+
+.control.control_c_text {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.control.control_c_color {
+  display: inline-block;
+  height: 24px;
+  margin: 12px;
+  margin-right: 24px;
+  vertical-align: top;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hab node editor</title>
+<link rel="stylesheet" href="nodes.css">
+<script src="nodes.js" type="text/javascript"></script>
+</head>
+<body>
+<canvas id="wires"></canvas>
+<div id="sidebar">
+  <div id="info">
+    <a href="rulelist.php">&lt; Back</a><br>
+    <input type="text" id="info_title">
+    <button onclick="saveServer();">Save</button>
+  </div>
+  <div id="toolbox"></div>
+</div>
+<div id="triggers"><div id="triggerList"></div><button onclick="addTrigger();">+</button></div>
+<div id="main"></div>
+</body>
+</html>
